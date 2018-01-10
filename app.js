@@ -35,3 +35,15 @@ if(haronHobbies === 'Y' || haronHobbies === 'YES') {
     alert('please input Y or N');
     console.log('please input Y or N');
 }
+
+var haronCollege = prompt('Do you think Haron went to College in WA. Please respond with a Y or N or YES or NO').toUpperCase();
+if(haronCollege === 'Y' || haronCollege === 'YES') {
+    alert('Your are correct! Infact Haron went to College in WA states capital Olympia');
+    console.log('Your are correct! Infact Haron went to College in WA states capital Olympia');
+} else if (haronCollege === 'N' || haronCollege === 'NO') {
+    alert('Incorrect Haron went to College in Olympia WA');
+    console.log('Incorrect Haron went to College in Olympia WA');
+} else {
+    alert('Please input Y or N');
+    console.log('Please input Y or N');
+}
