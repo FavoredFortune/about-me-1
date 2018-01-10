@@ -24,3 +24,14 @@ if (haronCareer === 'Y' || haronCareer === 'YES') {
     console.log('Please input Y or N');
 }
 
+var haronHobbies = prompt('Do you think Haron enjoys playing Fifa 18 and 2k18 during his down time. Please respond with Y or N or YES or NO').toUpperCase();
+if(haronHobbies === 'Y' || haronHobbies === 'YES') {
+    alert('This is correct, I\'m sure I can beat anyone in');
+    console.log('This is correct, I\'m sure I can beat anyone in');
+} else if ( haronHobbies === 'N' || haronHobbies === 'NO') {
+    alert('Your wrong, if your having a difficult time believing it come play me sometime and see for yourself.');
+    console.log('Your wrong, if your having a difficult time believing it come play me sometime and see for yourself.');
+} else {
+    alert('please input Y or N');
+    console.log('please input Y or N');
+}
