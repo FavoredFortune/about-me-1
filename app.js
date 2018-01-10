@@ -54,7 +54,7 @@ if (haronSports === 'y' || haronSports === 'YES') {
     console.log('This is incorrect, Haron\'s favorite sport to watch is Football');
 } else if (haronSports === 'N' || haronSports === 'NO') {
     alert('You must know Haron well, his favorite sport to watch on TV is football');
-    console.log('You must know Haron well, his favorite sport to watch on TV is football. His favorite to is the Seattle Seahawks.');
+    console.log('You must know Haron well, his favorite sport to watch on TV is football. His favorite to  watch is the Seattle Seahawks.');
 }else {
     alert('Please input Y or N');
     console.log('Please input Y or N');
