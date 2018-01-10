@@ -47,3 +47,15 @@ if(haronCollege === 'Y' || haronCollege === 'YES') {
     alert('Please input Y or N');
     console.log('Please input Y or N');
 }
+
+var haronSports = prompt('Do you think Haron\'s favorite sport to watch on TV is hockey?').toUpperCase();
+if (haronSports === 'y' || haronSports === 'YES') {
+    alert('This is incorrect, Haron\'s favorite sport to watch is Football');
+    console.log('This is incorrect, Haron\'s favorite sport to watch is Football');
+} else if (haronSports === 'N' || haronSports === 'NO') {
+    alert('You must know Haron well, his favorite sport to watch on TV is football');
+    console.log('You must know Haron well, his favorite sport to watch on TV is football. His favorite to is the Seattle Seahawks.');
+}else {
+    alert('Please input Y or N');
+    console.log('Please input Y or N');
+}
