@@ -1,8 +1,9 @@
 'use strict';
 
-var greeting = prompt('Hello, this is a guessing game about Haron. Let\'s find out how much you really know him.');
+var greeting = alert('Hello, this is a guessing game about Haron. Let\'s find out how much you really know him.');
 
 var userName = prompt('First off lets start with a short introduction. Please enter your name below');
+//counts how many questions the player got right.
 var counter = 0;
 
 var haronAge = prompt ('Do you think Haron\'s younger than 21 years old? Please respond with Y or N or with YES or NO').toUpperCase();
@@ -78,18 +79,21 @@ if (haronSports === 'y' || haronSports === 'YES') {
 
 
 
-for(var i = 0; i < 4; i++) {
+for(var i = 0; i < 3; i++) {
     var kobeNum = 8;
-    var jerseyNumber = prompt('What the jersey number of Haron\'s favorite basketball player?');
+    var jerseyNumber = prompt('What the jersey number of Haron\'s favorite basketball player? Please input a number.');
+    jerseyNumber = parseInt(jerseyNumber);
     
     if (jerseyNumber > kobeNum ) {
     alert('The players jesery number is less than ' + jerseyNumber);
 } else if (jerseyNumber < kobeNum) {
     alert('The players number is greater then the number ' + jerseyNumber);
+} else if(jerseyNumber === kobeNum){
+    alert('Correct this is number 8 kobe')
+    counter++
+    break;
 } else {
-   alert('Correct! #8 Kobe is Haron\'s all time favorite player');
-   counter++;
-   break;
+   alert('please input a number');
 }
 
 }
@@ -114,17 +118,20 @@ for(var i = 0; i < favoriteCars.length; i++) {
     console.log(favoriteCars[i]);
     //If the condition is right, the games says "your right" if not
     
-    if (carGuess === favoriteCars[i]) {      
-        console.log(userName + ' Your right Haron likes ' + favoriteCars + ' Btw it took you just ' + chanceCounter +' attempts');
+    if (favoriteCars.includes(carGuess)) {   
+        alert(userName + ' Your right Haron likes ' + favoriteCars + ' Btw it took you just ' + chanceCounter +' attempts to answer this question.');   
+        console.log(userName + ' Your right Haron likes ' + favoriteCars + ' Btw it took you just ' + chanceCounter +' attempts to answer this question.');
         console.log('It took your' + chanceCounter + ' attempts to get it right.')
         counter++
         chanceCounter = 10;
+        alert('You got ' + counter + '\\7 questions correct');
         console.log('You got ' + counter + '\\7 questions correct');
+        break;
     }else if (chanceCounter === 5) {
         console.log('you\'v used up all your time');
     } else {
-        prompt('wrong keep trying');
-    }
-    
-    }
+        alert('wrong keep trying');
+        break;
+    }  
+  }
 }
