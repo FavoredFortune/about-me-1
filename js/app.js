@@ -8,7 +8,7 @@ var counter = 0;
 
 var haronAge = prompt ('Do you think Haron\'s younger than 21 years old? Please respond with Y or N or with YES or NO.').toUpperCase();
 if (haronAge === 'Y' || haronAge === 'Yes') {
-  alert('You\'re wrong Haron is 25 years');
+  alert('You\'re wrong. Haron is 25 years old.');
   console.log(userName + ' guessed ' + haronAge);
 } else if ( haronAge === 'N' || haronAge === 'NO') {
   alert('You\'re right! Haron\'s 25 years old.');
